@@ -7,7 +7,7 @@ function Search() {
 
   async function Api() { // use a loop to access a maxium of 10 object sin teh array//
     const apiKey = "32bcfa90";
-    const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${input}`;
+    const url = `https://www.omdbapi.com/?apikey=${apiKey}&s=${input}`;
 
     try {
       const response = await fetch(url);
