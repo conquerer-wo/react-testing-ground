@@ -1,1 +1,2 @@
-.bd{display:block;border: 1px solid green; width:100vw; height: 80vh; margin-top:5vh; display: grid;; grid-template-columns: repeat(5,1fr); grid-template-rows: 1fr 1fr;} 
+.bd{display:grid;border: 1px solid green; width:100vw; height: 80vh; margin-top:5vh;  grid-template-columns: repeat(5,1fr); grid-template-rows: 1fr 1fr;} 
+.bd div {width:19vw ; height: 30vh; border-radius: 5%; border: 1px solid red;}

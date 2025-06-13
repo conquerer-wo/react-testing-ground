@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./search.css";
-
+import Body from './Body.jsx';
 function Search() {
   const [input, setInput] = useState("");
 
@@ -17,10 +17,7 @@ function Search() {
       }
 
       console.log(res.Search);
-      const movTitle = res.Search.slice(0,10).Title;
-      const movImg = res.Search.Poster;
-      const movType = res.Search.Type;
-      const movYear = res.Search.Year;
+      
       console.log(movTitle)
     } catch (error) {
       window.alert("Not working");
@@ -29,7 +26,7 @@ function Search() {
   }
         
   return (
-    <div className="cont">
+    <><div className="cont">
       <input
         id="search"
         placeholder="search a movie"
@@ -39,7 +36,10 @@ function Search() {
         search
       </button>
     </div>
+    <Body/>
+    </>
   );
 }
 
 export default Search;
+
