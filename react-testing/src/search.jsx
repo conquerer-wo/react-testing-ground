@@ -3,6 +3,7 @@ import "./search.css";
 import Body from './Body.jsx';
 function Search() {
   const [input, setInput] = useState("");
+  const [resa, setResa] = useState();
 
   async function Api() { // use a loop to access a maxium of 10 object sin teh array//
     const apiKey = "32bcfa90";
@@ -12,13 +13,15 @@ function Search() {
       const response = await fetch(url);
       const res = await response.json();
 
+
       if (!response.ok) {
         window.alert("Not Found");
       }
-
-      console.log(res.Search);
       
-      console.log(movTitle)
+      console.log(res.Search);
+      setResa(res.Search)
+      
+      
     } catch (error) {
       window.alert("Not working");
       console.error(error);
@@ -36,7 +39,7 @@ function Search() {
         search
       </button>
     </div>
-    <Body/>
+    <Body value = {resa}/>
     </>
   );
 }

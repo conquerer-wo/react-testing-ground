@@ -1,2 +1,5 @@
-.bd{display:grid;border: 1px solid green; width:100vw; height: 80vh; margin-top:5vh;  grid-template-columns: repeat(5,1fr); grid-template-rows: 1fr 1fr;} 
-.bd div {width:19vw ; height: 30vh; border-radius: 5%; border: 1px solid red;}
+.bd{display:grid; width:100vw; height: 80vh; margin-top:5vh;  grid-template-columns: repeat(5,1fr); grid-template-rows: 1fr 1fr;} 
+.bd div {width:19vw ; height: 30vh; border-radius: 5%; border: 1px solid red; display:flex; flex-direction: column; align-items: center;}
+.bd img {max-height: 70%; width:100%; border-radius: 5%; }
+.bd h1 {color:white;}
+.bd p{color:white;}
