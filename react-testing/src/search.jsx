@@ -4,7 +4,7 @@ import "./search.css";
 function Search() {
   const [input, setInput] = useState("");
 
-  async function Api() {
+  async function Api() { // use a loop to access a maxium of 10 object sin teh array//
     const apiKey = "32bcfa90";
     const url = `http://www.omdbapi.com/?apikey=${apiKey}&s=${input}`;
 
