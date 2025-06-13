@@ -16,7 +16,7 @@ console.log(value)
   return (
     <div className="bd">
       {show &&
-        value.map((item, index) => (
+        value?.map((item, index) => (
           <div key={index}>
             <img src={item.Poster} alt={item.Title} />
             <h1>{item.Title}</h1>

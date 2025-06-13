@@ -15,9 +15,10 @@ function Search() {
 
 
       if (!response.ok) {
-        window.alert("Not Found");
+        return(<p>ts NOT valid</p>)
       }
-      
+      if(res.Response !== "True") {window.alert("Your search doesnt exist")}
+      console.log(res);
       console.log(res.Search);
       setResa(res.Search)
       
@@ -33,7 +34,9 @@ function Search() {
       <input
         id="search"
         placeholder="search a movie"
+        
         onChange={(e) => setInput(e.target.value)}
+       
       />
       <button id="searchBtn" onClick={() => Api()}>
         search
