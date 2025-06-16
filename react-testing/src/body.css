@@ -3,3 +3,4 @@
 .bd img {max-height: 70%; width:100%; border-radius: 5%; }
 .bd h1 {color:white;}
 .bd p{color:white;}
+.bd: hover {opacity:0.3; transition: 0.5s opacity ease:}
